@@ -170,8 +170,6 @@ form {
   text-decoration: none;
   border: none;
   border-radius: 2px;
-  position: relative;
-  z-index: 3;
 }
 
 .btn:hover {
@@ -385,6 +383,22 @@ label {
   padding: .4em 0;
 }
 
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .price button {
   padding: 1em;
   background-color: #ff9100;
@@ -392,13 +406,16 @@ label {
   text-decoration: none;
   border: none;
   border-radius: 2px;
-  position: relative;
-  z-index: 3;
+  margin-left: auto;
 }
 
 .price button:hover {
   background-color: rgba(211, 100, 9, 0.76);
   cursor: pointer;
+}
+
+.price p {
+  margin-right: 1em;
 }
 
 .infograph-section {
@@ -926,8 +943,6 @@ label {
     text-decoration: none;
     border: none;
     border-radius: 2px;
-    position: relative;
-    z-index: 3;
   }
   .btn:hover {
     background-color: rgba(82, 82, 82, 0.336);
