@@ -3,7 +3,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat',cursive;
 }
 
 img {
@@ -134,8 +134,8 @@ form {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"), -webkit-gradient(linear, left top, right top, color-stop(10%, #ac8d51), to(#995d2b));
-  background-image: url("https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"), linear-gradient(to right, #ac8d51 10%, #995d2b 100%);
+  background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60), -webkit-gradient(linear, left top, right top, color-stop(10%, #ac8d51), to(#995d2b));
+  background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60), linear-gradient(to right, #ac8d51 10%, #995d2b 100%);
   -webkit-clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 0%);
           clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 0%);
   min-height: 80vh;
@@ -170,6 +170,8 @@ form {
   text-decoration: none;
   border: none;
   border-radius: 2px;
+  position: relative;
+  z-index: 3;
 }
 
 .btn:hover {
@@ -260,7 +262,7 @@ label {
 .featured-title p {
   margin-top: 1em;
   font-size: 2.5vh;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
 }
 
 .slide-wrap {
@@ -343,7 +345,7 @@ label {
 }
 
 .inspiration-section h1 {
-  padding: 0.8em;
+  padding: .8em;
   padding-bottom: 0;
   margin: 0;
   font-size: 4vh;
@@ -380,7 +382,7 @@ label {
 }
 
 .card h2 {
-  padding: 0.4em 0;
+  padding: .4em 0;
 }
 
 .price button {
@@ -390,6 +392,8 @@ label {
   text-decoration: none;
   border: none;
   border-radius: 2px;
+  position: relative;
+  z-index: 3;
 }
 
 .price button:hover {
@@ -434,7 +438,7 @@ label {
 
 .info-card p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer {
@@ -443,7 +447,7 @@ label {
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 4%);
           clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 4%);
-  background-image: url("https://images.pexels.com/photos/1577238/pexels-photo-1577238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url(https://images.pexels.com/photos/1577238/pexels-photo-1577238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   padding: 5em 1em;
 }
 
@@ -454,7 +458,7 @@ label {
 .footer a {
   display: block;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
+  font-weight: 700;
   padding: 1em 2em;
 }
 
@@ -463,12 +467,7 @@ label {
   color: black;
 }
 
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-
 @media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .featured-items {
     width: 500px;
   }
@@ -593,7 +592,6 @@ label {
   li a {
     font-size: 2vh;
   }
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .featured {
     -webkit-clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 2%);
             clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 2%);
@@ -609,7 +607,7 @@ label {
   .featured-title p {
     margin-top: 1em;
     font-size: 2.5vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
   }
   .featured-items {
     display: -webkit-box;
@@ -655,7 +653,7 @@ label {
     padding: 1em;
   }
   .inspiration-section h1 {
-    padding: 0.8em;
+    padding: .8em;
     padding-bottom: 0;
     margin: 0;
     font-size: 4vh;
@@ -687,7 +685,7 @@ label {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .card h2 {
-    padding: 0.4em 0;
+    padding: .4em 0;
   }
   .infograph-section {
     display: -webkit-box;
@@ -799,7 +797,6 @@ label {
 }
 
 @media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
   body {
     margin: 1em;
   }
@@ -858,7 +855,7 @@ label {
     background-color: rgba(0, 0, 0, 0.411);
   }
   li a {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2vh;
     display: inline-block;
     width: auto;
@@ -929,6 +926,8 @@ label {
     text-decoration: none;
     border: none;
     border-radius: 2px;
+    position: relative;
+    z-index: 3;
   }
   .btn:hover {
     background-color: rgba(82, 82, 82, 0.336);
