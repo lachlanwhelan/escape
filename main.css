@@ -86,6 +86,7 @@ form {
   margin: 1em;
   background-color: #ffbb00;
   position: relative;
+  border-radius: 10px;
 }
 
 .fa-times {
@@ -95,8 +96,10 @@ form {
 }
 
 .input-section input, select {
-  width: 100%;
+  min-width: 200px;
   padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .radio-section {
@@ -105,8 +108,13 @@ form {
   display: flex;
 }
 
+.radio-section input {
+  margin-left: 10px;
+}
+
 .input-section {
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .input-section div {
@@ -732,88 +740,9 @@ label {
   .info-card p {
     font-size: 1.5vh;
   }
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
-    -webkit-box-align: none;
-        -ms-flex-align: none;
-            align-items: none;
-    color: white;
-    padding: 4em;
-    border-radius: 5px;
-    background-color: #d69810;
-    margin: 2em;
-  }
-  .cover {
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-    opacity: 1;
-    z-index: 0;
-  }
-  .form-overlay h1 {
-    font-size: 8vh;
-  }
-  .radio-section {
-    font-size: 3vh;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  .radio-section, .input-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: left;
-  }
-  .radio-section input {
-    margin-left: 2em;
-    width: 10px;
-  }
-  .fa-times {
-    font-size: 5em;
-    color: black;
-    cursor: pointer;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  form .btn {
-    max-width: 200px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-right: 30px;
-    font-size: 2vh;
-    cursor: pointer;
-  }
-  .input-section {
-    margin: none;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    font-size: 2.3vh;
-  }
-  .input-section input, select {
-    padding: 1em;
-    min-width: 200px;
-  }
-  .form-overlay label {
-    display: block;
-    position: static;
-  }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) and (min-width: 1025px) {
   body {
     margin: 1em;
   }
@@ -1033,6 +962,61 @@ label {
   }
   .footer-cards:nth-child(2) {
     border: none;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    color: white;
+    padding: 4em;
+    border-radius: 5px;
+    background-color: #ffbb00;
+    margin: 2em;
+  }
+  .radio-section {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .radio-section, .input-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .input-section input, select {
+    min-width: 200px;
+    border-radius: 0;
+    border: 1px solid black;
+  }
+  .form-overlay h1 {
+    font-size: 8vh;
+  }
+  .radio-section {
+    font-size: 3vh;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .input-section {
+    margin: none;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 2.3vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
